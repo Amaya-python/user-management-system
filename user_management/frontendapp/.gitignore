@@ -1,5 +1,7 @@
+# =========================
 # Logs
-logs
+# =========================
+logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
@@ -7,18 +9,81 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+
+# =========================
+# Node / React / Vite
+# =========================
+node_modules/
+frontendapp/node_modules/
+
+dist/
+dist-ssr/
+frontendapp/dist/
+
 *.local
 
+
+# =========================
+# Python / Django
+# =========================
+__pycache__/
+*.py[cod]
+*.pyc
+*.pyo
+
+*.pyd
+
+
+# =========================
+# Django Database
+# =========================
+db.sqlite3
+
+
+# =========================
+# Environment Variables
+# =========================
+.env
+.env.*
+!.env.example
+
+venv/
+env/
+.venv/
+
+
+# =========================
+# Python IDE / Tools
+# =========================
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+
+# =========================
 # Editor directories and files
+# =========================
 .vscode/*
 !.vscode/extensions.json
-.idea
+
+.idea/
 .DS_Store
+
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+
+# =========================
+# ZIP / Backup files
+# =========================
+*.zip
+
+
+# =========================
+# OS Files
+# =========================
+Thumbs.db
+Desktop.ini
